@@ -20,24 +20,24 @@ Shamo is a Flutter ecommerce app that is designed based on the UI in Figma. This
 To get started with Shamo, follow these steps:
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/Veloxium/shamo.git
-   \`\`\`
+   ```
 
 2. **Navigate to the project directory:**
-   \`\`\`bash
+   ```bash
    cd Shamo
-   \`\`\`
+   ```
 
 3. **Install dependencies:**
-   \`\`\`bash
+   ```bash
    flutter pub get
-   \`\`\`
+   ```
 
 4. **Run the app:**
-   \`\`\`bash
+   ```bash
    flutter run
-   \`\`\`
+   ```
 
    This will launch the Shamo app on your connected device or emulator.
 
