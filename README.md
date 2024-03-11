@@ -1,6 +1,7 @@
 # Shamo - Flutter Ecommerce App
 
 Shamo is a Flutter ecommerce app that is designed based on the UI in Figma. This project utilizes the \`get\` package for state management and \`google_fonts\` package for incorporating custom fonts.
+[Link To Figma](https://www.figma.com/file/gnU5qWcB4U1wHgGSaUVbKf/Shamo---Flutter-Laravel?type=design&node-id=0%3A1&mode=design&t=sm1Oob7p06SucAqL-1)
 
 ## Table of Contents
 
