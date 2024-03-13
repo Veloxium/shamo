@@ -5,14 +5,25 @@ class Message {
   final String sender;
   final String text;
   final String time;
+  final bool? item;
+  final String? image;
+  final String? title;
+  final String? price;
 
-  Message({required this.sender, required this.text, required this.time});
+  Message(
+      {required this.sender,
+      required this.text,
+      required this.time,
+      this.item,
+      this.image,
+      this.title,
+      this.price});
 }
 
 class MessageController extends GetxController {
   TextEditingController textEditingController = TextEditingController();
   RxBool chat = false.obs;
-  RxBool item = false.obs;
+  RxBool item = true.obs;
 
   RxList<Message> chatMessages = <Message>[].obs;
 
@@ -24,14 +35,33 @@ class MessageController extends GetxController {
     item.value = newCondition;
   }
 
-  void addMessage(String sender, String text, String time) {
-    final newMessage = Message(sender: sender, text: text, time: time);
+  void addMessage(
+    String sender,
+    String text,
+    String time, {
+    bool? item,
+    String? image,
+    String? title,
+    String? price,
+  }) {
+    final newMessage = Message(
+      sender: sender,
+      text: text,
+      time: time,
+      item: item,
+      image: image,
+      title: title,
+      price: price,
+    );
     chatMessages.add(newMessage);
     Future.delayed(const Duration(milliseconds: 1500), () {
-      chatMessages.add(Message(
+      chatMessages.add(
+        Message(
           sender: 'Bot',
           text: 'Haiyaaaa chaocibeee!',
-          time: DateTime.now().toString()));
+          time: DateTime.now().toString(),
+        ),
+      );
     });
   }
 }

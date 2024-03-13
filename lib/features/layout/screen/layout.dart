@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan_mobile/features/auth/screen/signin.dart';
 import 'package:latihan_mobile/features/auth/screen/signup.dart';
+import 'package:latihan_mobile/features/cart/screen/cart.dart';
 import 'package:latihan_mobile/features/favorite/screen/favorite.dart';
 import 'package:latihan_mobile/features/home/screen/home.dart';
 import 'package:latihan_mobile/features/layout/controller/layout_controller.dart';
@@ -22,7 +23,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
   final List<Widget> _children = [
     HomeScreen(),
     MessageScreen(),
-    const FavoriteScreen(),
+    FavoriteScreen(),
     const ProfileScreen()
   ];
 
@@ -43,7 +44,9 @@ class _LayoutScreenState extends State<LayoutScreen> {
         width: 70,
         child: FloatingActionButton(
           shape: const CircleBorder(side: BorderSide()),
-          onPressed: () {},
+          onPressed: () {
+            Get.to(() => CartScreen());
+          },
           backgroundColor: CColors.primary,
           elevation: 0,
           child: Image.asset(

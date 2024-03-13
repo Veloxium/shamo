@@ -12,16 +12,22 @@ class CColors {
   static const Color price = Color(0xFF2C96F1);
   static const Color itemchat = Color(0xFF6C5ECF);
   static const Color bgitemchat = Color(0xFF2B2844);
-
+  static const Color bgitemcart = Color(0xFF252836);
 
 
   static const Color bgColor = Color(0xFF1F1D2B);
   static const Color bgColor2 = Color(0xFF2B2937);
   static const Color bgColor3 = Color(0xFF242231);
 
+  static const Color btnmin = Color(0xFF3F4251);
+  static const Color btnsecondary = Color(0xFF39374B);
+  static const Color btnsecondarytext = Color(0xFFB7B6BF);
+
+
   static const Color primaryText = Color(0xFFF1F0F2);
   static const Color secondaryText = Color(0xFF999999);
   static const Color sublabel = Color(0xFF504F5E);
+  static const Color border = Color(0xFF504F5E);
 
   static const Color iconBar = Color(0xFF808191);
   static const Color categoryColor = Color(0xFF504F5E);
@@ -32,7 +38,7 @@ class CColors {
 class CTextStyles {
   static TextStyle title = GoogleFonts.poppins(
     fontSize: 24,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w600,
     color: CColors.primaryText,
   );
 

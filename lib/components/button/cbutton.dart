@@ -20,9 +20,7 @@ class CButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.0),
           ),
         ),
-        onPressed: (){
-          onPressed!();
-        },
+        onPressed: onPressed ?? () {},
         child: Text(
           label,
           style: GoogleFonts.poppins(
